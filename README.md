@@ -1,10 +1,12 @@
-https://angular.io/guide/styleguide
+# Use this repository as a startingplace
 
-Core module:
+This repository is a normal angular-cli install setup to follow [angular styleguide](https://angular.io/guide/styleguide).
+
+**Core module:**
 
 - Holds services used througout the application.
 
-Shared module:
+**Shared module:**
 
 - Holds components, directives, and pipes that will be re-used and referenced by the components declared in other feature modules.
 
