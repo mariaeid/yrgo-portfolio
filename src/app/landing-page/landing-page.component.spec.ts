@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LandingPageComponent } from './landing-page.component';
@@ -8,9 +9,9 @@ describe('LandingPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LandingPageComponent ]
-    })
-    .compileComponents();
+      imports: [SharedModule],
+      declarations: [LandingPageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
