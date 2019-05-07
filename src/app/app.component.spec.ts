@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { ExampleService } from './core/example.service';
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
@@ -10,7 +11,7 @@ describe('AppComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule, SharedModule],
       declarations: [AppComponent]
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);
@@ -41,5 +42,14 @@ describe('AppComponent', () => {
     app.ngOnInit();
 
     expect(countSpy).toHaveBeenCalled();
+  });
+
+  it('Should render an example component', () => {
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+
+    const exampleComponent = compiled.querySelector('app-example');
+
+    expect(exampleComponent).not.toBeNull();
   });
 });
