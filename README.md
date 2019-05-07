@@ -1,3 +1,13 @@
+https://angular.io/guide/styleguide
+
+Core module:
+
+- Holds services used througout the application.
+
+Shared module:
+
+- Holds components, directives, and pipes that will be re-used and referenced by the components declared in other feature modules.
+
 # Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
