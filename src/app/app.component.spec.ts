@@ -3,7 +3,6 @@ import { ExampleService } from './core/example.service';
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { componentFactoryName } from '@angular/compiler';
 
 describe('AppComponent', () => {
   let fixture;
@@ -11,7 +10,7 @@ describe('AppComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule, SharedModule],
+      imports: [RouterTestingModule],
       declarations: [AppComponent]
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);
@@ -42,14 +41,5 @@ describe('AppComponent', () => {
     app.ngOnInit();
 
     expect(countSpy).toHaveBeenCalled();
-  });
-
-  it('Should render an example component', () => {
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-
-    const exampleComponent = compiled.querySelector('app-example');
-
-    expect(exampleComponent).not.toBeNull();
   });
 });
