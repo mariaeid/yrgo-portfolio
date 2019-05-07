@@ -7,11 +7,17 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LandingPageModule } from './landing-page/landing-page.module';
 
 @NgModule({
-  declarations: [AppComponent, LandingPageComponent],
-  imports: [BrowserModule, AppRoutingModule, CoreModule, SharedModule],
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CoreModule,
+    SharedModule,
+    LandingPageModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
