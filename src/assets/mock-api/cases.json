@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A cool website",
+    "slug": "a-cool-website",
+    "body": "This was a website about how you charge your phone",
+    "image": "https://cdn.dribbble.com/users/417083/screenshots/1376900/attachments/197964/DrRealPixel_View.png"
+  },
+  {
+    "title": "Desktop dashboard",
+    "slug": "desktop-dashboard",
+    "body": "It does nothing but looks cool",
+    "image": "https://cdn.dribbble.com/users/757683/screenshots/5363083/a-01_4x.jpg"
+  },
+  {
+    "title": "Yellow app",
+    "slug": "yellow-app",
+    "body": "App that goes in yellow and white cuz it's looks cool",
+    "image": "https://cdn.dribbble.com/users/4859/screenshots/5888241/file-explorer_4x.png"
+  },
+  {
+    "title": "Foodie app",
+    "slug": "foodie-app",
+    "body": "A concept app that would be impossible to implement",
+    "image": "https://cdn.dribbble.com/users/345970/screenshots/6379476/artboard3_4x.png"
+  },
+  {
+    "title": "Pattern library",
+    "slug": "pattern-library",
+    "body": "A pattern library in angular ready to be used",
+    "image": "https://cdn.dribbble.com/users/757683/screenshots/6059001/p-02_4x.jpg"
+  },
+  {
+    "title": "Chatbot for aliens",
+    "slug": "chatbot-for-aliens",
+    "body": "Not really for aliens but it's catchy",
+    "image": "https://cdn.dribbble.com/users/1970904/screenshots/5488517/comp-1_1.gif"
+  }
+]

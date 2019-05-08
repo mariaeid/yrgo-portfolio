@@ -1,0 +1,14 @@
+<h2>Cases</h2>
+<p>Handpicked projects i have done</p>
+<p *ngIf="!loaded">Loading...</p>
+<ul *ngIf="loaded" class="cases">
+  <li class="card" *ngFor="let case of cases">
+    <a [routerLink]="['/' + case.slug]">
+      <img [src]="case.image" alt="Project image" />
+      <div class="text">
+        <h3>{{ case.title }}</h3>
+        <p>{{ case.body }}</p>
+      </div>
+    </a>
+  </li>
+</ul>
