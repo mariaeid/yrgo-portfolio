@@ -1,4 +1,8 @@
-<div class="hero card" [style.backgroundImage]="'url(' + content.image + ')'">
+<div
+  *ngIf="loaded"
+  class="hero card"
+  [style.backgroundImage]="'url(' + content.image + ')'"
+>
   <h1>{{ content.title }}</h1>
   <p class="body">{{ content.body }}</p>
 </div>

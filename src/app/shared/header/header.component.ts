@@ -8,12 +8,15 @@ import { HeaderService } from './../../core/header.service';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent implements OnInit {
+  public loaded = false;
   public content;
 
-  constructor(public headerService: HeaderService) { }
+  constructor(public headerService: HeaderService) {}
 
   ngOnInit() {
-    this.content = this.headerService.fetch();
+    this.headerService.fetch().subscribe(data => {
+      this.loaded = true;
+      this.content = data;
+    });
   }
-
 }
