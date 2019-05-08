@@ -1,3 +1,4 @@
+import { CasesService } from './../../core/cases.service';
 import { Component, OnInit } from '@angular/core';
 
 import { HeaderService } from './../../core/header.service';
